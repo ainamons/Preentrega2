@@ -36,10 +36,16 @@
 /* MAIN */
 
 h1 {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
     line-height: 1.5;
     text-align: center;
+}
+@media screen and (min-width:568px) {
+    h1 {
+       font-size: 60px;
+    }
+        
 }
 
 h2 {
@@ -76,6 +82,12 @@ p {
     align-items: center;
     background-image:url(../assets/img/hero.jpg);
     } 
+
+.hero h1, .hero-about h1, .hero-services h1, .hero-portfolio h1, {
+    display: flex;
+    flex-wrap: wrap;
+    padding:20px 0;
+}
 
 .hero-about {
     width: 100%;
