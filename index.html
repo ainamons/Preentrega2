@@ -9,40 +9,42 @@
 </head>
 <body>
 
-    <nav class="navbar fixed-top ">
-        <div class="container-fluid">
-          <a class="navbar-brand text-black fw-bold text-uppercase" href="./index.html">Jordi Salom</a>
-          <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" data-bs-theme="dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title text-uppercase" id="offcanvasNavbarLabel">Jordi Salom</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <header>
+        <nav class="navbar fixed-top ">
+            <div class="container-fluid">
+              <a class="navbar-brand text-black fw-bold text-uppercase" href="./index.html">Jordi Salom</a>
+              <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" data-bs-theme="dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-uppercase" id="offcanvasNavbarLabel">Jordi Salom</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item text-uppercase">
+                      <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                      <a class="nav-link" href="./pages/sobre-mi.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link" href="./pages/portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item text-uppercase">
-                  <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item text-uppercase">
-                  <a class="nav-link" href="./pages/sobre-mi.html">Sobre mi</a>
-                </li>
-                <li class="nav-item text-uppercase">
-                    <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item text-uppercase">
-                    <a class="nav-link" href="./pages/portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item text-uppercase">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+          </nav>
+    </header>
     <main>
         <section class="hero">
             <article class="hero-content">
@@ -51,62 +53,107 @@
             </article>
         </section>
 
-        <section class="container">
+        <section class="container-fluid my-5 pt-5">
             <h2> Con especialidad en: </h2>
             <article class="specialities">
-                <ul class="specialities-list">
-                    <li class="specialities-icon">PHP</li>
-                    <li class="specialities-icon">Javascript</li>
-                    <li class="specialities-icon">Node JS</li>
-                    <li class="specialities-icon">Vue JS</li>
-                    <li class="specialities-icon">SQL</li>
-                    <li class="specialities-icon">Python</li>
+                <ul class="card-list">
+                    <li class="card-icon">PHP</li>
+                    <li class="card-icon">Javascript</li>
+                    <li class="card-icon">Node JS</li>
+                    <li class="card-icon">Vue JS</li>
+                    <li class="card-icon">SQL</li>
+                    <li class="card-icon">Python</li>
                 </ul> 
             </article>
         </section>
 
-        <section class="container">
+        <section class="container-fluid my-5 pt-5 justify-content-center">
             <h2> ¿Qué puedo hacer por ti?</h2>
-            <article class="card-container">
-                <div class="card-body">                   
-                    <h3>Desarrollo a medida</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
+                <div class="row gap-5 d-flex justify-content-center">
+                    <article class="col-md-3 col-sm-9 card">
+                        <div class="card-body">
+                          <h3 class="card-title">Desarrollo a medida</h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit veniam facere incidunt alias modi corporis atque cumque laborum, aspernatur, non culpa at a facilis vero voluptas necessitatibus, id sapiente? Blanditiis.</p>
+                        </div>
+                    </article>
+    
+                    <article class="col-md-3 col-sm-9 card">
+                        <div class="card-body">
+                          <h3 class="card-title">E-Commerce</h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nostrum! Iusto distinctio eveniet natus consequuntur. Doloribus asperiores, saepe adipisci odio accusantium perspiciatis ad repellat, omnis odit sed provident ab ea.</p>
+                        </div>
+                    </article>
+                    <article class="col-md-3 col-sm-9 card">
+                         <div class="card-body">
+                          <h3 class="card-title">Desarrollo Back-end</h3>
+                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis rem laborum repellat, excepturi, provident fuga esse ab rerum eos sapiente porro iusto quisquam nisi at nobis sunt iure cum nemo? </p>
+                        </div>  
+                    </article>  
                 </div>
-                <div class="card-body">         
-                    <h3>E-Commerce</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
-                </div>
-                <div class="card-body">
-                    <h3>Desarrollo Back-end</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
-                </div>
-            </article>   
         </section>
 
-        <section class="container">
+        
+
+        <section class="carousel slide container my-5">
             <h2>Testimonios</h2>
-            <article class="card-container">
-                <div class="card-body-review">
-                    <img src="./assets/img/image-placeholder.png">
-                    <span><p><b>Alberto Ruiz</b></p>
-                        <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
-                    </span>
-                </div>
-                <div class="card-body-review">
-                    <img src="./assets/img/image-placeholder.png">
-                    <span>
-                        <p><b>Hotel Estrella</b></p>
-                        <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
-                    </span>
-                </div>
-                <div class="card-body-review">
-                    <img src="./assets/img/image-placeholder.png">
-                    <span>
-                        <p><b>María López</b></p>
-                        <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
-                    </span>
-                </div>
-            </article>   
+            <article class="carousel-inner">
+              <div class="carousel-item carousel-card active">
+                <article class="card-wrapper">
+                    <div class="card-body-review">
+                        <img src="./assets/img/image-placeholder.png">
+                        <span><p><b>Alberto Ruiz</b></p>
+                            <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
+                        </span>
+                    </div>
+                    <div class="card-body-review">
+                        <img src="./assets/img/image-placeholder.png">
+                        <span>
+                            <p><b>Hotel Estrella</b></p>
+                            <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
+                        </span>
+                    </div>
+                    <div class="card-body-review">
+                        <img src="./assets/img/image-placeholder.png">
+                        <span>
+                            <p><b>María López</b></p>
+                            <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
+                        </span>
+                    </div>
+                </article>
+            </div>
+              <div class="carousel-item carousel-card">
+                <article class="card-wrapper">
+                    <div class="card-body-review">
+                        <img src="./assets/img/image-placeholder.png">
+                        <span><p><b>Alberto Ruiz</b></p>
+                            <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
+                        </span>
+                    </div>
+                    <div class="card-body-review">
+                        <img src="./assets/img/image-placeholder.png">
+                        <span>
+                            <p><b>Hotel Estrella</b></p>
+                            <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
+                        </span>
+                    </div>
+                    <div class="card-body-review">
+                        <img src="./assets/img/image-placeholder.png">
+                        <span>
+                            <p><b>María López</b></p>
+                            <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
+                        </span>
+                    </div>
+                </article>
+              </div>
+            </article>
+            <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </section>
     </main>
     <footer>

@@ -8,7 +8,8 @@
     <title>Contacto</title>
 </head>
 <body>
-    <nav class="navbar fixed-top ">
+    <header>
+      <nav class="navbar fixed-top ">
         <div class="container-fluid">
           <a class="navbar-brand text-black fw-bold text-uppercase" href="../index.html">Jordi Salom</a>
           <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -42,6 +43,7 @@
           </div>
         </div>
       </nav>
+    </header>
 <main>
 
     <section class="container">
@@ -52,11 +54,11 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.3223416233013!2d2.6929247000000003!3d39.5974206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979366d7c9a70d%3A0xa4fab6b520e30554!2sCam%C3%AD%20de%20Sant%20Llatzet%2C%204%2C%2007141%20Marratx%C3%AD%2C%20Illes%20Balears!5e0!3m2!1ses!2ses!4v1704837164006!5m2!1ses!2ses"></iframe>
             </article>
             <form>
-                <div> Nombre:</div>
+              <label for="Name">Nombre</label>
                 <input type="text" value="Nombre"/>
-                <div>E-mail:</div>
+                <label for="email">E-mail:</label>
                 <input type="email" value="E-mail"/>
-                <div>Mensaje:</div>
+                <label for="message">Mensaje:</label>
                 <textarea> Escriba aquí su mensaje</textarea>
                 <input class="button" type="submit" value="Enviar"/>
             </form>
