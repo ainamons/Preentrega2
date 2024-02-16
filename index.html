@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <nav class="navbar fixed-top ">
+        <nav class="navbar sticky-top">
             <div class="container-fluid">
               <a class="navbar-brand text-black fw-bold text-uppercase" href="./index.html">Jordi Salom</a>
               <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -38,7 +38,6 @@
                     <li class="nav-item text-uppercase">
                         <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                     </li>
-                    
                   </ul>
                 </div>
               </div>
@@ -46,7 +45,7 @@
           </nav>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero-home">
             <article class="hero-content">
                 <h1>PROGRAMADOR FULL-STACK</h1>
                 <h2>Mallorca - En remoto</h2>
@@ -56,13 +55,13 @@
         <section class="container-fluid my-5 pt-5">
             <h2> Con especialidad en: </h2>
             <article class="specialities">
-                <ul class="card-list">
-                    <li class="card-icon">PHP</li>
-                    <li class="card-icon">Javascript</li>
-                    <li class="card-icon">Node JS</li>
-                    <li class="card-icon">Vue JS</li>
-                    <li class="card-icon">SQL</li>
-                    <li class="card-icon">Python</li>
+                <ul>
+                    <li class="specialities-list">PHP</li>
+                    <li class="specialities-list">Javascript</li>
+                    <li class="specialities-list">Node JS</li>
+                    <li class="specialities-list">Vue JS</li>
+                    <li class="specialities-list">SQL</li>
+                    <li class="specialities-list">Python</li>
                 </ul> 
             </article>
         </section>
@@ -72,21 +71,24 @@
                 <div class="row gap-5 d-flex justify-content-center">
                     <article class="col-md-3 col-sm-9 card">
                         <div class="card-body">
-                          <h3 class="card-title">Desarrollo a medida</h3>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit veniam facere incidunt alias modi corporis atque cumque laborum, aspernatur, non culpa at a facilis vero voluptas necessitatibus, id sapiente? Blanditiis.</p>
+                            <img src="./assets/img/icon-desarrollo.svg" alt="Icono Desarrollo a medida"/>
+                            <h3 class="card-title">Desarrollo a medida</h3>
+                            <p class="card-text">En un mundo digital cada vez más saturado de soluciones genéricas, ofrezco un servicio de desarrollo a medida que se destaca por su enfoque personalizado y adaptabilidad. Como programador full stack, tengo la capacidad única de abordar tanto el frontend como el backend de tus proyectos, asegurando una solución integral que no solo cumpla, sino que exceda tus expectativas.</p>
                         </div>
                     </article>
     
                     <article class="col-md-3 col-sm-9 card">
                         <div class="card-body">
-                          <h3 class="card-title">E-Commerce</h3>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nostrum! Iusto distinctio eveniet natus consequuntur. Doloribus asperiores, saepe adipisci odio accusantium perspiciatis ad repellat, omnis odit sed provident ab ea.</p>
+                            <img src="./assets/img/icon-ecommerce.svg" alt="Icono E-Commerce"/>
+                            <h3 class="card-title">E-Commerce</h3>
+                            <p class="card-text">Ofrezco soluciones integrales para tu tienda en línea, asegurando una experiencia de usuario fluida y una gestión del sitio eficiente. Desde pequeñas tiendas hasta grandes emporios en línea, desarrollo sistemas e-commerce adaptados a las necesidades específicas de cada cliente, utilizando las tecnologías más avanzadas </p>
                         </div>
                     </article>
                     <article class="col-md-3 col-sm-9 card">
                          <div class="card-body">
-                          <h3 class="card-title">Desarrollo Back-end</h3>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis rem laborum repellat, excepturi, provident fuga esse ab rerum eos sapiente porro iusto quisquam nisi at nobis sunt iure cum nemo? </p>
+                            <img src="./assets/img/icon-backend.svg" alt="Icono Desarrollo Back-end"/>
+                            <h3 class="card-title">Desarrollo Back-end</h3>
+                            <p class="card-text">El corazón de cualquier aplicación digital es su back-end, el cual asegura que todo, desde la lógica de la aplicación hasta las interacciones con la base de datos, funcione sin problemas y de manera eficiente. Mi servicio de desarrollo back-end está diseñado para construir y mantener la columna vertebral de tus aplicaciones web y móviles, garantizando rendimiento, seguridad y escalabilidad. </p>
                         </div>  
                     </article>  
                 </div>
@@ -97,7 +99,32 @@
         <section class="carousel slide container my-5">
             <h2>Testimonios</h2>
             <article class="carousel-inner">
-              <div class="carousel-item carousel-card active">
+                <div class="carousel-item carousel-card active">
+                    <article class="card-wrapper">
+                        <div class="card-body-review">
+                            <img src="./assets/img/alberto-review.jpg">
+                            <span><p><b>Alberto Ruiz</b></p>
+                                <p class="review-text">Ha sido todo un acierto contratar a Jordi para el desarrollo de nuestra tienda online. Ha hecho un trabajo muy profesional.</p>
+                            </span>
+                        </div>
+                        <div class="card-body-review">
+                            <img src="./assets/img/hotel-review.jpg">
+                            <span>
+                                <p><b>Hotel Estrella</b></p>
+                                <p class="review-text">Increíble atención al detalle y adaptabilidad. El proyecto superó nuestras expectativas, ofreciendo soluciones innovadoras que realmente impulsaron nuestro negocio.</p>
+                            </span>
+                        </div>
+                        <div class="card-body-review">
+                            <img src="./assets/img/image-placeholder.png">
+                            <span>
+                                <p><b>María López</b></p>
+                                <p class="review-text">Jordi ha mejorado enormemente la eficiencia y seguridad de nuestra plataforma. Es notable la mejora en el rendimiento general.</p>
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </article>
+            <div class="carousel-item carousel-card">
                 <article class="card-wrapper">
                     <div class="card-body-review">
                         <img src="./assets/img/image-placeholder.png">
@@ -121,31 +148,6 @@
                     </div>
                 </article>
             </div>
-              <div class="carousel-item carousel-card">
-                <article class="card-wrapper">
-                    <div class="card-body-review">
-                        <img src="./assets/img/image-placeholder.png">
-                        <span><p><b>Alberto Ruiz</b></p>
-                            <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
-                        </span>
-                    </div>
-                    <div class="card-body-review">
-                        <img src="./assets/img/image-placeholder.png">
-                        <span>
-                            <p><b>Hotel Estrella</b></p>
-                            <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
-                        </span>
-                    </div>
-                    <div class="card-body-review">
-                        <img src="./assets/img/image-placeholder.png">
-                        <span>
-                            <p><b>María López</b></p>
-                            <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis ratione quidem tempore molestias magni sint asperiores possimus ut debitis vel, deserunt maxime quas explicabo deleniti, sapiente blanditiis! Harum, mollitia.</p>
-                        </span>
-                    </div>
-                </article>
-              </div>
-            </article>
             <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>

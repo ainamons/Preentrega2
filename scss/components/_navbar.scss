@@ -1,0 +1,23 @@
+/*NAV*/
+
+.navbar {
+    background-color: $primary-color;
+}
+
+.navbar-toggler, .navbar-toggler:active, .navbar-toggler:focus{
+    border:none;
+    box-shadow: none;
+ }
+
+.offcanvas-body, .offcanvas-header {
+    background-color: $secondary-color;
+    border-left: 1px solid $primary-color;
+}
+
+.offcanvas-title, .nav-link, .nav-item:hover .nav-link, .nav-item:focus  .nav-link, .nav-link:active  {
+    color:$primary-color;
+}
+
+.nav-item:hover .nav-link, .nav-item:focus  .nav-link {
+    font-weight: 700;
+}

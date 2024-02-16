@@ -1,0 +1,28 @@
+// EXTEND
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    h1 {
+        display: flex;
+        flex-wrap: wrap;
+        padding:20px 0;
+        justify-content: center;
+    }
+}
+
+// MIXIN
+
+@mixin flex ($direction,$justify,$align,$gap ) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap:$gap
+}
