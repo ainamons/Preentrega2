@@ -60,6 +60,11 @@ p {
     padding:10px;
     h1 {
         text-align:center;
+        animation-name: entrada;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 1.5s;
+        animation-delay: 0.2s;
     }
 }
 
@@ -89,8 +94,13 @@ p {
             height:80px;
             color: white;
             background-color: $secondary-color;
-            border-radius: 4px+6px;
+            transition: 0,8s;
+            border-radius: 10px;
             box-shadow: 2px 2px 5px 5px rgba(192, 192, 192, 0.369);
+            &:hover {
+                background-color: $primary-color;
+                color:$secondary-color
+            }
         }
 
         .icon-list {
