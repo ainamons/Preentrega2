@@ -9,13 +9,6 @@
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
-    // h1 {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     padding:20px 0;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
 }
 
 // MIXIN
@@ -27,3 +20,4 @@
     align-items: $align;
     gap:$gap
 }
+

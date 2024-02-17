@@ -89,7 +89,7 @@ p {
             height:80px;
             color: white;
             background-color: $secondary-color;
-            border-radius: 10px;
+            border-radius: 4px+6px;
             box-shadow: 2px 2px 5px 5px rgba(192, 192, 192, 0.369);
         }
 
@@ -203,7 +203,6 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    gap: 10px;
     padding: 10px;
     grid-template-areas:
       'a1 a2 a3'

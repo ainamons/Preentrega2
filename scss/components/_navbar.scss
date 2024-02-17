@@ -1,7 +1,17 @@
 /*NAV*/
 
+
+
+
 .navbar {
-    background-color: $primary-color;
+    $color-schema:light;
+    @if $color-schema==light {
+        background-color:$primary-color;
+    } @else if $color-schema==dark {
+        background-color: $secondary-color;
+    } @else {
+        background-color: #fff;
+    }
 }
 
 .navbar-toggler, .navbar-toggler:active, .navbar-toggler:focus{
@@ -10,7 +20,7 @@
  }
 
 .offcanvas-body, .offcanvas-header {
-    background-color: $secondary-color;
+    background-color: -color;
     border-left: 1px solid $primary-color;
 }
 
