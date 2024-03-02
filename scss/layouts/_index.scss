@@ -78,6 +78,7 @@ p {
     ul{
         @include flex(row,center,center,20px);
         flex-wrap: wrap;
+        padding-left:0;
 
         .selector {
             font-weight: 600;
@@ -165,7 +166,7 @@ p {
     @include flex(row,center,start,40px);
     flex-wrap: wrap;
     img {
-        max-width:400px;
+        max-width:300px;
         height:330px;
         object-fit:cover;
     }
